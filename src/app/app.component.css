@@ -1,0 +1,35 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  /* --primary-color: #026467; */
+  --primary-color: #018786;
+  --secondary-color: #026467;
+  --body-text-color: #596392;
+  --navbar-footer-color: #f9f9f9;
+  --danger-color: #b00020;
+
+  --font-light: 300;
+  --font-bold: 500;
+  --font-bolder: 700;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* font-size: 10px; 10/16*100 */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: var(--body-text-color);
+}
