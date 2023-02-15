@@ -29,3 +29,13 @@
 
 2. added bootstrap@4.6
 3. added global styles
+
+## 3° step
+
+1. Added header
+2. Added category menu
+3. Added footer
+
+## 4° step
+
+1. Implemented post card and subscription cards

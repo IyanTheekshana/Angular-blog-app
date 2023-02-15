@@ -1,0 +1,17 @@
+/* Card css */
+
+.card {
+  border-radius: 1.5rem;
+  max-width: 35rem;
+  border: 1px solid var(--navbar-footer-color);
+  padding-bottom: 1rem;
+}
+
+.image-rounded {
+  border-radius: 1.5rem;
+}
+
+.card-img-top {
+  width: 90%;
+  margin: 2rem auto;
+}

@@ -1,0 +1,10 @@
+footer {
+  height: 13rem;
+  padding: 1.5rem;
+  background-color: var(--navbar-footer-color);
+  margin-top: 85vh;
+}
+
+.logo {
+  font-size: 4.9rem;
+}
