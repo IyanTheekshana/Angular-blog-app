@@ -1,7 +1,14 @@
 <app-header></app-header>
 <div class="app-body">
-  <!-- <app-post-card></app-post-card> -->
-  <app-subscription-form></app-subscription-form>
+  <router-outlet></router-outlet>
+  <section class="subscription-section">
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+          <app-subscription-form></app-subscription-form>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 <app-footer></app-footer>
-<router-outlet></router-outlet>

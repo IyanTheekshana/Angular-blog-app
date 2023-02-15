@@ -35,7 +35,4 @@
 1. Added header
 2. Added category menu
 3. Added footer
-
-## 4° step
-
-1. Implemented post card and subscription cards
+4. Implemented post card and subscription cards

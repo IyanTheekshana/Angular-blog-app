@@ -1,0 +1,17 @@
+.featured-section {
+  padding: 2rem 5rem;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+}
+
+h2 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.latest-section {
+  padding: 2rem 5rem;
+}

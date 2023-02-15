@@ -1,6 +1,6 @@
 .card {
   background-color: var(--secondary-color);
-  max-width: 90%;
+
   margin: auto;
   color: var(--navbar-footer-color);
 }

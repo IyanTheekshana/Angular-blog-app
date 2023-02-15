@@ -10,6 +10,7 @@
   --body-text-color: #596392;
   --navbar-footer-color: #f9f9f9;
   --danger-color: #b00020;
+  --black: #061a23;
 
   --font-light: 300;
   --font-bold: 500;
@@ -34,16 +35,24 @@ body {
   box-sizing: border-box;
   font-family: var(--main-font-family);
   font-size: 1.4rem;
-  color: var(--body-text-color);
+  color: var(--black);
 }
 
 .app-body {
   margin-top: 15rem;
+  height: 100%;
+  min-height: 35vh;
 }
 
-.logo {
+a {
+  text-decoration: none !important;
+}
+
+.logo,
+.logo:hover,
+.logo:focus {
   font-family: "Dancing Script", cursive;
-  color: black;
+  color: var(--black);
 }
 
 .nav-link {
@@ -54,4 +63,12 @@ body {
 .nav-link:hover {
   height: 100%;
   color: #000;
+}
+
+.subscription-section {
+  padding: 2rem 5rem;
+}
+
+.card {
+  border-radius: 1.5rem;
 }
