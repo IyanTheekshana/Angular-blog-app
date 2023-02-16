@@ -1,0 +1,12 @@
+.card {
+  border: none;
+  background-image: linear-gradient(
+    to bottom right,
+    white 50%,
+    var(--navbar-footer-color) 100%
+  );
+}
+
+.btn {
+  font-size: 1.2rem;
+}

@@ -1,6 +1,6 @@
 .card {
-  background-color: var(--secondary-color);
-
+  /* background-color: var(--secondary-color); */
+  background-image: var(--primary-bg);
   margin: auto;
   color: var(--navbar-footer-color);
 }
@@ -9,7 +9,6 @@ h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
   position: relative;
-  background-color: var(--secondary-color);
 }
 
 h2::before,

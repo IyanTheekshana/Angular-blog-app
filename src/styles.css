@@ -12,6 +12,12 @@
   --danger-color: #b00020;
   --black: #061a23;
 
+  --primary-bg: linear-gradient(
+    to bottom right,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+
   --font-light: 300;
   --font-bold: 500;
   --font-bolder: 700;
@@ -36,6 +42,11 @@ body {
   font-family: var(--main-font-family);
   font-size: 1.4rem;
   color: var(--black);
+}
+
+h2 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
 }
 
 .app-body {

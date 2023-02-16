@@ -36,3 +36,10 @@
 2. Added category menu
 3. Added footer
 4. Implemented post card and subscription cards
+
+## 4° step
+
+1. Implemented home page
+2. Implemented Single Category Page
+3. Implemented Single Post Page
+4. Implemented Comment form and Comment list views
