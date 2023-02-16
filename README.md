@@ -43,3 +43,4 @@
 2. Implemented Single Category Page
 3. Implemented Single Post Page
 4. Implemented Comment form and Comment list views
+5. Implemented About us, terms and conditions page

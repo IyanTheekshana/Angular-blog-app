@@ -25,7 +25,7 @@ const routes: Routes = [
     component: AboutUsComponent,
   },
   {
-    path: 'term-conditions',
+    path: 'terms-conditions',
     component: TermsAndConditionsComponent,
   },
   {
