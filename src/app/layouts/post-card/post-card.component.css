@@ -6,6 +6,7 @@
   padding-bottom: 1rem;
   margin: 2rem auto;
   min-height: 45rem;
+  cursor: pointer;
 }
 
 .image-rounded {

@@ -4,6 +4,7 @@
       <div class="row">
         <div class="col-md-11 mx-auto">
           <h2>SUBSCRIPTION</h2>
+          <h3 *ngIf="isSubed">Subscribed Successfully</h3>
           <p class="m-auto subs-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A
             consectetur minima sint, rerum, voluptate ea hic, aliquid quasi
@@ -13,24 +14,54 @@
         </div>
       </div>
 
-      <form class="form m-5">
+      <form
+        class="form m-5"
+        #subForm="ngForm"
+        (ngSubmit)="onSubmit(subForm.value); subForm.reset()"
+      >
         <div class="row">
           <div class="form-group col-md-4">
             <input
               type="text"
               class="form-control shadow"
               placeholder="Your name"
+              name="name"
+              ngModel
+              required
+              #Name="ngModel"
+              [ngClass]="{ 'is-invalid': Name.touched && Name.invalid }"
             />
+            <div class="alert" *ngIf="Name.touched && Name.invalid">
+              Name is Required
+            </div>
           </div>
           <div class="form-group col-md-5">
             <input
-              type="text"
+              type="email"
               class="form-control shadow"
               placeholder="Email Address"
+              name="email"
+              ngModel
+              required
+              email
+              #Email="ngModel"
+              [ngClass]="{'is-invalid': Email.errors?.['required'] && Email.touched}"
             />
+            <div
+              class="alert"
+              *ngIf="Email.errors?.['required'] && Email.touched"
+            >
+              email is Required
+            </div>
+            <div class="alert" *ngIf="Email.errors?.['email'] && Email.touched">
+              Valid email is Required
+            </div>
           </div>
           <div class="col-md-3">
-            <button class="btn btn-info btn-block btn-sub shadow">
+            <button
+              class="btn btn-info btn-block btn-sub shadow"
+              [disabled]="subForm.invalid"
+            >
               SUBSCRIBE
             </button>
           </div>
