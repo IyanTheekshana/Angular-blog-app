@@ -44,3 +44,10 @@
 3. Implemented Single Post Page
 4. Implemented Comment form and Comment list views
 5. Implemented About us, terms and conditions page
+
+## 5° step
+
+1. Implemented Category Navbar with dynamic data
+2. Implemented Post Card with dynamic data
+3. Implemented Single Category page with dynamic data
+4. Implemented Single Post with dynamic data

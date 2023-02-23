@@ -1,26 +1,29 @@
-<div class="card shadow-sm">
+<div class="card shadow-sm" *ngIf="post" [routerLink]="['/post', post.id]">
   <img
-    src="https://images.unsplash.com/photo-1676407591026-824246b4a102?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    src="{{ post.postImgPath }}"
     alt="image"
     class="card-img-top image-rounded shadow"
   />
   <div class="card-body">
-    <small class="bg-light badge text-danger text-color shadow-sm"
-      >Design</small
+    <small class="bg-light badge text-danger text-color shadow-sm">{{
+      post.category.category
+    }}</small>
+    <small
+      class="bg-light badge text-success text-color ml-3 shadow-sm"
+      *ngIf="post.isFeatured"
     >
-    <small class="bg-light badge text-success text-color ml-3 shadow-sm"
-      >Featured</small
+      Featured</small
     >
     <small class="bg-light badge text-info text-color ml-3 shadow-sm"
-      >Views - 100,233</small
+      >Views: {{ post.views }}</small
     >
 
-    <h3 class="mt-4">Title card</h3>
+    <h3 class="mt-4">{{ post.title }}</h3>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum inventore
-      deserunt est porro non placeat cumque omnis quisquam, animi nesciunt,
-      necessitatibus beatae id labore vel, illo natus ea eveniet vero.
+      {{ post.excerpt }}
     </p>
-    <span class="badge badge-light shadow-sm">Last updated - SEP 20, 2022</span>
+    <span class="badge badge-light shadow-sm"
+      >Last updated - {{ formatDate(post.createdAt) | date }}</span
+    >
   </div>
 </div>

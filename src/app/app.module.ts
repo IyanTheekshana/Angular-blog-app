@@ -16,6 +16,9 @@ import { CommentsFormComponent } from './comments/comments-form/comments-form.co
 import { CommentsListComponent } from './comments/comments-list/comments-list.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { PostCardComponent } from './layouts/post-card/post-card.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -32,13 +35,15 @@ import { PostCardComponent } from './layouts/post-card/post-card.component';
     CommentsFormComponent,
     CommentsListComponent,
     AboutUsComponent,
-    PostCardComponent
+    PostCardComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

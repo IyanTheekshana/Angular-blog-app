@@ -12,17 +12,11 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-3 col-sm-6">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <app-post-card></app-post-card>
+      <div
+        class="col-lg-3 col-sm-6"
+        *ngFor="let featuredPost of featuredArray; let i = index"
+      >
+        <app-post-card [postData]="featuredPost"></app-post-card>
       </div>
     </div>
   </div>
@@ -41,23 +35,11 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4 col-sm-6">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <app-post-card></app-post-card>
+      <div
+        class="col-lg-4 col-sm-6"
+        *ngFor="let latestPost of latestArray; let i = index"
+      >
+        <app-post-card [postData]="latestPost"></app-post-card>
       </div>
     </div>
   </div>

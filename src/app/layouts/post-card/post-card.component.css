@@ -5,6 +5,7 @@
   border: 1px solid var(--navbar-footer-color);
   padding-bottom: 1rem;
   margin: 2rem auto;
+  min-height: 45rem;
 }
 
 .image-rounded {
