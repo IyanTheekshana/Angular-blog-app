@@ -51,3 +51,4 @@
 2. Implemented Post Card with dynamic data
 3. Implemented Single Category page with dynamic data
 4. Implemented Single Post with dynamic data
+5. Implemented View counter method

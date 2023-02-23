@@ -4,15 +4,15 @@ import {
   Firestore,
   where,
   query,
-  getDocs,
-  collectionGroup,
-  DocumentData,
   collectionData,
   CollectionReference,
   orderBy,
   doc,
   docData,
   limit,
+  setDoc,
+  increment,
+  updateDoc,
 } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { IPost } from '../models/post';
@@ -68,5 +68,13 @@ export class PostsService {
       ),
       { idField: 'id' }
     ) as Observable<IPost[]>;
+  }
+
+  countViews(postId: any) {
+    const viewCount = {
+      views: increment(1),
+    };
+    let $posts = doc(this.afs, `posts`, postId);
+    return updateDoc($posts, viewCount);
   }
 }

@@ -19,6 +19,7 @@ export class SinglePostComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe((data) => {
       // console.log(data['id']);
+      this.postService.countViews(data['id']);
       this.postService.loadSinglePost(data['id']).subscribe((data) => {
         // console.log(data);
         this.post = data;
